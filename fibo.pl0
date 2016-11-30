@@ -1,0 +1,28 @@
+const k1 = 0, k2 = 1;
+var n1, n2, L;
+
+procedure fibonacci;
+var fi;
+begin
+	fi := n1 + n2;
+	n1 := n2;
+	n2 := fi
+end;
+
+procedure inicializar;
+begin
+	n1 := k1;
+	n2 := k2
+end;
+
+begin
+	call inicializar;
+	write('Nros. de Fibonacci menores que: ');
+	readln (L);
+	while odd 1 do
+		begin
+			call fibonacci;
+			if n2 >= L then exit;
+			writeln (n2)
+		end
+end.
